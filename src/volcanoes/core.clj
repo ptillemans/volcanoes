@@ -21,8 +21,20 @@
 ;; 1. Autocomplete
 ;;    unintrusive <-> intrusive
 ;; 2. Parenthesis matching
+;;    - rainbow parens
+;;    - highlight matching
 ;; 3. Visual Prompts
+;;    - args
 
+;; Structural Editing
+;; 1. Nothing -- not recommended
+;; 2. simple -- open + free close  (also not recommended)
+;; 3. Parinfer -- enforce balanced parens, smart indents
+;; 4. Paredit  -- enforce balanced parens
+
+
+(map inc [1 2 3]
+         4)
 (def csv-lines
   (with-open [csv (io/reader "GVP_Volcano_List_Holocene.csv")]
     (doall
